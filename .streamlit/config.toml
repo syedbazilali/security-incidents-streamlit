@@ -1,2 +1,20 @@
+[theme]
+primaryColor="#FF4B4B"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
 [server]
-enableXsrfProtection = false
+maxUploadSize = 200
+```
+
+### **Step 6: Your Project Structure Should Look Like This**
+```
+security-incidents-predictor/
+│
+├── app.py
+├── requirements.txt
+├── runtime.txt
+└── .streamlit/
+    └── config.toml
