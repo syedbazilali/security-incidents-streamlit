@@ -85,7 +85,7 @@ if uploaded_file is not None:
         preprocessor = ColumnTransformer(
             transformers=[
                 ("num", StandardScaler(), numeric_features),
-                ("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=False),
+                ("cat", OneHotEncoder(handle_unknown="ignore"),
                  [c for c in categorical_features if X[c].nunique() < 50])
             ]
         )
